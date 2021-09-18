@@ -24,7 +24,6 @@ public class HookUtil {
         try {
 
             // IActivityTaskManagerSingleton 是静态的  可以通过反射获取 singleton 对象
-            // 获取 singleton 对象
             Class<?> amClass = null;
             Field singletonField = null;
 

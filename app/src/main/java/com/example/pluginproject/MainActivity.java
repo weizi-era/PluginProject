@@ -51,9 +51,9 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
-//                Intent intent = new Intent();
-//                intent.setComponent(new ComponentName("com.example.plugin", "com.example.plugin.MainActivity"));
-//                startActivity(intent);
+                Intent intent = new Intent();
+                intent.setComponent(new ComponentName("com.example.plugin", "com.example.plugin.MainActivity"));
+                startActivity(intent);
 
             }
         });
@@ -66,5 +66,7 @@ public class MainActivity extends AppCompatActivity {
         if (classLoader != null) {
             Log.e("TAG", "printClassLoader: " + classLoader);
         }
+
+        Log.e("TAG", "printClassLoader: " + MainActivity.class.getClassLoader());
     }
 }
